@@ -1,4 +1,4 @@
-//ORDENAR UN ARRAY DE OBJETOS POR EL PRECIO Y REFERENCIA siempre
+//ORDENAR UN ARRAY DE OBJETOS POR EL PRECIO Y REFERENCIA
 
 class producto {
     constructor(ref, nombre, precio, unidad, stock) {
