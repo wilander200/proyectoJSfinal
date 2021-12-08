@@ -68,7 +68,7 @@
     </div>
       
       <!-- seccion principal de la pagina -->
-      <div class="main col-12 p-2 bg-white">
+      <div class="main col-12 p-1">
         <div
         id="carouselExampleInterval"
         class="carousel slide"
@@ -77,28 +77,35 @@
         <div class="carousel-inner">
           <div class="carousel-item active" data-bs-interval="3000">
             <img
-            src="imagenes/carrusel1.AVIF"
-            class="d-block w-100 h-auto"
+            src="img/portada/carrouselportada.jpeg"
+            class="d-block imgCarousel"
             alt="imgcarrusel1"
             />
           </div>
           <div class="carousel-item" data-bs-interval="3000">
             <img
-            src="imagenes/imagenDeInicio.AVIF"
-            class="d-block w-100 h-auto"
+            src="img/portada/carrouselPortada2.jpg"
+            class="d-block imgCarousel"
             alt="imgcarrusel2"
             />
           </div>
-          <div class="carousel-item">
+          <div class="carousel-item" data-bs-interval="3000">
             <img
-            src="imagenes/carrusel3.AVIF"
-            class="d-block w-100 h-auto"
+            src="img/portada/carrouselPortada3.jpg"
+            class="d-block imgCarousel"
             alt="imgcarrusel3"
+            />
+          </div>
+          <div class="carousel-item" data-bs-interval="3000">
+            <img
+            src="img/portada/carrouselPortada4.jpg"
+            class="d-block imgCarousel"
+            alt="imgcarrusel4"
             />
           </div>
         </div>
           <button
-          class="carousel-control-prev"
+          class="carousel-control-prev w-50"
           type="button"
           data-bs-target="#carouselExampleInterval"
           data-bs-slide="prev"
@@ -110,7 +117,7 @@
           <span class="visually-hidden">Previous</span>
         </button>
         <button
-        class="carousel-control-next"
+        class="carousel-control-next w-50"
         type="button"
         data-bs-target="#carouselExampleInterval"
         data-bs-slide="next"
@@ -123,18 +130,83 @@
       </button>
     </div>
   </div>
-  
-  
-  
-  <!-- footer -->
-  <div class="row p-2 mx-1 footer bg-black d-flex footer">
-    <div class="d-flex flex-column col-4">
-      <img
-      class="mx-auto imgFooter"
-      src="img/icons/mail 2.AVIF"
-      alt="email"
-      />
-      <a class="text-center" href="mailto:contacto@cpm.cl"
+  <div class="row justify-content-center mx-1">
+    <div class="d-flex justify-content-center align-items-center">
+      <div class="col-12 m-3">
+        <h1 class="text-center fw-bold display-5 my-2">NUESTROS PRODUCTOS DESTACADOS</h1>
+      </div>
+    </div>
+    <div class="d-flex flex-wrap m-5">
+      <div class="col-4 my-3">
+        <a href="bicicletas.html">
+          <img  
+          class="img-fluid d-block mx-auto imgProducto"
+          src="img/downhill/downHill29Doble.jfif"
+          alt="electrico"
+          />
+        </a>
+          <h3 class="text-center fw-bold my-2">Downhill</h3>
+      </div>
+      <div class="col-4 my-3">
+        <a href="ebikes.html">
+          <img
+          class="img-fluid d-block mx-auto imgProducto"
+          src="img/ebikes/ebikeEnduro.jfif"
+          alt="electrico"
+          />
+        </a>
+        <h3 class="text-center fw-bold my-2">Ebikes</h3>
+      </div>
+      <div class="col-4 my-3">
+        <img
+        class="img-fluid d-block mx-auto imgProducto"
+        src="img/enduro/enduro27Doble.jfif"
+        alt="electrico"
+        />
+        <h3 class="text-center fw-bold my-2">Enduro</h3>
+      </div>
+      <div class="col-4 my-3">
+        <a href="bicicletas.html">   
+          <img
+          class="img-fluid d-block mx-auto imgProducto"
+          src="img/fatbikes/fatbike29.jfif"
+          alt="electrico"
+          />
+        </a>
+        <h3 class="text-center fw-bold my-2">Fat bikes</h3>
+      </div>
+      <div class="col-4 my-3">
+        <a href="bicicletas.html">
+          <img
+          class="img-fluid d-block mx-auto imgProducto"
+          src="img/trail/trailBike29.jfif"
+          alt="electrico"
+          />
+        </a>
+        <h3 class="text-center fw-bold my-2">Trail</h3>
+      </div>
+      <div class="col-4 my-3">
+        <a href="bicicletas.html">
+          <img
+          class="img-fluid d-block mx-auto imgProducto"
+          src="img/xco/xco29Doble.jfif"
+          alt="electrico"
+          />
+        </a>
+          <h3 class="text-center fw-bold my-2">XCO</h3>
+        </div>
+    </div>
+    </div>
+    
+    <!-- footer -->
+    <div class="row p-2 mx-1 footer bg-black d-flex footer">
+      <div class="d-flex flex-column col-4">
+        <img
+        class="mx-auto imgFooter"
+        src="img/icons/mail 2.AVIF"
+        alt="email"
+        />
+        <a class="text-center" href="mailto:contacto@cpm.cl"
       >contacto@cpm.cl</a
       >
     </div>

@@ -35,6 +35,15 @@
   
   }
   
-  
-  
+  .imgCarousel {
+    object-fit: scale-down;
+    height: 80vh;
+    width: 100%;
+  }
+
+  .imgProducto {
+    object-fit: scale-down;
+    height: 250px;
+    width: 100%;
+  }
   
