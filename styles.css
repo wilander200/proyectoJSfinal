@@ -27,6 +27,13 @@
   
   }
   
+  .imgFooter{
+    width: auto !important;
+    height: auto !important;
+    max-width: 75px !important;
+    max-height: 75px !important;
+  
+  }
   
   
   

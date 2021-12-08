@@ -33,17 +33,18 @@
   </head>
   <body>
     <!--contenedor de toda la página-->
-    <div class="container-fluid d-block"></div>
+  <div class="container-fluid d-block">
+
     
     <!--Header  -->
-    <div class="row d-flex flex-row justify-content-betwen header mx-1 bg-black">
-    <!-- Logo de la pagina -->
+    <div class="row d-flex flex-row justify-content-betwen mx-1 bg-black">
+      <!-- Logo de la pagina -->
       <div class="col-2">
         <a href="index.html">
           <img src="/img/portada/Logo.png" alt="logoInicio"/>
         </a>
       </div>
-    <!-- Barra de navegacion para moverse entre las paginas -->
+      <!-- Barra de navegacion para moverse entre las paginas -->
       <div class="col-10 container">
         <ul class="nav h-100  row d-flex justify-content-end align-items-end w-100">
           <li class="nav-item col-2 ">
@@ -62,11 +63,108 @@
             <a href="carrito.html"><img class="imgCarrito" src="/img/portada/carrito.png" alt="carritoCompra"/></a>
           </li>
         </ul>
-
+        
       </div>
-
     </div>
       
+      <!-- seccion principal de la pagina -->
+      <div class="main col-12 p-2 bg-white">
+        <div
+        id="carouselExampleInterval"
+        class="carousel slide"
+        data-bs-ride="carousel"
+        >
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="3000">
+            <img
+            src="imagenes/carrusel1.AVIF"
+            class="d-block w-100 h-auto"
+            alt="imgcarrusel1"
+            />
+          </div>
+          <div class="carousel-item" data-bs-interval="3000">
+            <img
+            src="imagenes/imagenDeInicio.AVIF"
+            class="d-block w-100 h-auto"
+            alt="imgcarrusel2"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+            src="imagenes/carrusel3.AVIF"
+            class="d-block w-100 h-auto"
+            alt="imgcarrusel3"
+            />
+          </div>
+        </div>
+          <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleInterval"
+          data-bs-slide="prev"
+          >
+          <span
+          class="carousel-control-prev-icon"
+          aria-hidden="true"
+          ></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleInterval"
+        data-bs-slide="next"
+        >
+        <span
+        class="carousel-control-next-icon"
+        aria-hidden="true"
+        ></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+  
+  
+  
+  <!-- footer -->
+  <div class="row p-2 mx-1 footer bg-black d-flex footer">
+    <div class="d-flex flex-column col-4">
+      <img
+      class="mx-auto imgFooter"
+      src="img/icons/mail 2.AVIF"
+      alt="email"
+      />
+      <a class="text-center" href="mailto:contacto@cpm.cl"
+      >contacto@cpm.cl</a
+      >
+    </div>
+    <div class="d-flex flex-column col-4">
+      <img
+      class="mx-auto imgFooter"
+      src="img/icons/call-center.AVIF"
+      alt="telefono"
+      />
+      <a class="text-center" href="tel:+56955555555">+56-9-55555555</a>
+    </div>
+    <div class="d-flex flex-column col-4">
+      <img
+            class="mx-auto imgFooter"
+            src="img/icons/map.AVIF"
+            alt="ubicacion"
+            />
+            <div class="d-flex justify-content-center">
+              <a
+              rel="noopener"
+              href="https://www.google.cl/maps/@-32.9261174,-71.5336387,15.52z"
+              target="_blank"
+              >Viña del Mar, Chile</a
+              >
+            </div>
+          </div>
+        </div>
+    </div>
+    
+    <!-- Script para cargar las funciones -->
     <script src="baseDatos.js"></script>
     <script src="main.js"></script>
   </body>
