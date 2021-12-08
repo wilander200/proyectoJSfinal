@@ -5,12 +5,14 @@
 });*/
 
 let contenedor = [];
-let botonForm = document.getElementById("button");
-botonForm.addEventListener("click", agregarForm);
+let botonCompra = document.querySelectorAll(".btnCarrito");
 
-function agregarForm() {
-  let bebidaUser = document.getElementById("selecProduct");
-  let cantidadBebidas = document.getElementById("unidades");
+for (let btn of botonCompra){
+  btn.addEventListener("click", agregarCarrito);
+}
+
+function agregarCarrito(e) {
+  console.log(e.target);
 
   // programa para la lista
 

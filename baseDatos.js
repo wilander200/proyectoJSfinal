@@ -1,6 +1,4 @@
-//ORDENAR UN ARRAY DE OBJETOS POR EL PRECIO Y REFERENCIA
-
-class producto {
+class bicicletas {
     constructor(ref, nombre, precio, unidad, stock) {
       this.ref = ref;
       this.nombre = nombre;
@@ -8,26 +6,28 @@ class producto {
       this.unidad = unidad;
     }
   }
-  let bebidas = [];
+  let bikes = [];
   
-  bebidas.push(new producto(1, "Coca-Cola zero 1.5l", 1680, 500));
-  bebidas.push(new producto(2, "Coca-Cola Light 1.5L", 1680, 500));
-  bebidas.push(new producto(3, "Coca-Cola Original 1.5L", 1680, 500));
-  bebidas.push(new producto(4, "Sprite zero 1.5L", 1680, 350));
-  bebidas.push(new producto(5, "Sprite Light 1.5L", 1680, 320));
-  bebidas.push(new producto(6, "Sprite Original 1.5L", 1680, 350));
-  bebidas.push(new producto(7, "Jugo de naranja 2L", 1550, 150));
-  bebidas.push(new producto(8, "Agua mineral 1.5L", 850, 1500));
-  bebidas.push(new producto(9, "Cerveza Patagonia Variedades 335ml", 950, 650));
-  bebidas.push(new producto(10, "Cerveza Corona 335ml", 550, 1000));
-  bebidas.push(new producto(11, "Cerveza Quilmes 335ml", 450, 1000));
-  bebidas.push(new producto(12, "Ron Madero", 3500, 200));
-  bebidas.push(new producto(13, "Ron Cacique 500", 6500, 200));
-  bebidas.push(new producto(14, "Vodka Absolute variedades", 8950, 100));
-  bebidas.push(new producto(15, "Vinos Tarapaca", 4500, 100));
-  bebidas.push(new producto(16, "Vino Casillero del Diablo", 5650, 100));
-  bebidas.push(new producto(17, "Hielo 1kg", 1250, 50));
-  bebidas.push(new producto(18, "Hielo 2kg", 850, 50));
-  bebidas.push(new producto(19, "Papas Fritas Lays 400g", 2500, 150));
-  bebidas.push(new producto(20, "Pisco Variedades", 6500, 150));
+  bikes.push(new bicicletas(1, "Enduro 29' Doble Suspención", 2800000, 20));
+  bikes.push(new bicicletas(2, "Enduro 27' Doble Suspención", 2800000, 20));
+  bikes.push(new bicicletas(3, "Enduro 29' Rígida", 1680000, 50));
+  bikes.push(new bicicletas(4, "Enduro 27' Rígida", 1680000, 35));
+  bikes.push(new bicicletas(5, "Trail 29' Doble Suspención", 1780000, 32));
+  bikes.push(new bicicletas(6, "Trail 27' Doble Suspención", 1780000, 35));
+  bikes.push(new bicicletas(7, "Trail 29' Rígida", 1250000, 15));
+  bikes.push(new bicicletas(8, "Trail 27' Rígida", 1250000, 15));
+  bikes.push(new bicicletas(9, "XCO 29' Doble Suspención", 1550000, 20));
+  bikes.push(new bicicletas(10,"XCO 27' Doble Suspención", 1550000, 10));
+  bikes.push(new bicicletas(11,"XCO 29' Rígida", 850000, 10));
+  bikes.push(new bicicletas(12,"XCO 27' Rígida", 850000, 20));
+  bikes.push(new bicicletas(13,"Fat bike Doble Suspención", 3200000, 10));
+  bikes.push(new bicicletas(14, "Fat bike 29' Rígida", 1850000, 10));
+  bikes.push(new bicicletas(15, "Fat bike 27' Rígida", 1850000, 10));
+  bikes.push(new bicicletas(16, "Downhill 29'", 3800000, 10));
+  bikes.push(new bicicletas(17, "Downhill 27'", 3800000, 5));
+  bikes.push(new bicicletas(18, "Ebike para Downhill", 11800000, 12));
+  bikes.push(new bicicletas(19, "Ebike para Enduro", 7400000, 15));
+  bikes.push(new bicicletas(20, "Ebike Rígida", 3500000, 18));
+  bikes.push(new bicicletas(20, "Ebike para Trail", 6680000, 15));
+  bikes.push(new bicicletas(20, "Fat Bike Eléctrica", 8450000, 11));
   
