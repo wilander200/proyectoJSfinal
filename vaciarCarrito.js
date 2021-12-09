@@ -4,11 +4,11 @@ btnVaciarCarrito.addEventListener("click", vaciarCarrito);
 
 
 function vaciarCarrito(e) {
-    let contenedor = e.target;
-    while (contenedor == null){
-      let cont = document.getElementById("listaCarrito")
-      cont.removeChild(contenedor.parentNode);
-    }
-    return false;
     localStorage.clear();
+    let lista = document.getElementById("listaCarrito");
+    let suma = document.getElementById("sumatoria");
+    let iva = document.getElementById("totalIva");
+    lista.remove();
+    suma.remove();
+    iva.remove();
   }
