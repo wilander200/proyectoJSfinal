@@ -56,6 +56,7 @@
           <li class="nav-item col-2 ">
             <a href="ebikes.html">Ebikes</a>
           </li>
+
           <li class="nav-item col-2">
             <a id="cargarCarrito" href="carrito.html"><img class="imgCarrito" src="/img/portada/carrito.png" alt="carritoCompra"/></a>
           </li>
@@ -68,68 +69,19 @@
       <div class=" row hero1">
         <h1 class="texto1 w-100">LAS MEJORES BICICLETAS</h1>
       </div>
-      <div class="row my-4 justify-content-center">
-        <h2 class="text-center display-3 fw-bold my-3">Ebikes</h2>
-        <div class="col-4 justify-content-center px-5">
-          <img src="img/ebikes/ebikeDownhill.jfif" class="card-img-top imgProducto" alt="ebikeDownhill">
-          <div class="card-body">
-            <h5 class="text-center fs-6">18</h5>
-            <h5 class="card-title text-center">Ebike Downhill</h5>
-            <h5 class="card-title text-center">11.800.000 pesos</h5>
-            <p class="card-text text-center">Bicicleta eléctrica para Downhill con motor Bosh 300W y bateria para 5 horas</p>
-            <div class="justify-content-around d-flex">
-              <a href="#" class="btn btn-primary btnCarrito">Agregar al Carrito</a>
-            </div>
-            </div>
+      <div class="row carrito my-4">
+        <h1 class="text-center display-5 fw-bold w-100 d-flex align-items-center justify-content-center">Tus productos seleccionados son</h1>
+        <div id="listaCarrito">
+            <ul>
+                <li class="fw-bold fs-4">Referencia</li>
+                <li class="fw-bold fs-4">Producto</li>
+                <li class="fw-bold fs-4">Precio</li>
+            </ul>
         </div>
-        <div class="col-4 justify-content-center px-5">
-          <img src="img/ebikes/ebikeEnduro.jfif" class="card-img-top imgProducto" alt="ebikeEnduro">
-          <div class="card-body">
-            <h5 class="text-center fs-6">19</h5>
-            <h5 class="card-title text-center">Ebike Enduro</h5>
-            <h5 class="card-title text-center">7.400.000 pesos</h5>
-            <p class="card-text text-center">Bicicleta eléctrica para Enduro con motor Bosh 300W y bateria para 5 horas</p>
-            <div class="justify-content-around d-flex">
-              <a href="#" class="btn btn-primary btnCarrito">Agregar al Carrito</a>
-            </div>
-            </div>
-        </div>
-        <div class="col-4 justify-content-center px-5">
-          <img src="img/ebikes/ebikeRigida.jfif" class="card-img-top imgProducto" alt="ebikeRigida">
-          <div class="card-body">
-            <h5 class="text-center fs-6">20</h5>
-            <h5 class="card-title text-center">Ebike Rígida</h5>
-            <h5 class="card-title text-center">3.500.000 pesos</h5>
-            <p class="card-text text-center">Bicicleta eléctrica Rígida con motor Bosh 200W y bateria para 3 horas</p>
-            <div class="justify-content-around d-flex">
-              <a href="#" class="btn btn-primary btnCarrito">Agregar al Carrito</a>
-            </div>
-            </div>
-        </div>
-        <div class="col-4 justify-content-center">
-          <img src="img/ebikes/ebiketrail.jfif" class="card-img-top imgProducto" alt="ebiketrail">
-          <div class="card-body">
-            <h5 class="text-center fs-6">21</h5>
-            <h5 class="card-title text-center">Ebike Trail</h5>
-            <h5 class="card-title text-center">6.680.000 pesos</h5>
-            <p class="card-text text-center">Bicicleta eléctrica para Enduro con motor Bosh 300W y bateria para 5 horas</p>
-            <div class="justify-content-around d-flex">
-              <a href="#" class="btn btn-primary btnCarrito">Agregar al Carrito</a>
-            </div>
-            </div>
-        </div>
-        <div class="col-4 justify-content-center">
-          <img src="img/ebikes/fatbike29Ebike.jpg" class="card-img-top imgProducto" alt="fatEbike">
-          <div class="card-body">
-            <h5 class="text-center fs-6">22</h5>
-            <h5 class="card-title text-center">Fat Bike Eléctrica</h5>
-            <h5 class="card-title text-center">8.450.000 pesos</h5>
-            <p class="card-text text-center">Bicicleta eléctrica Fat Bike con motor Bosh 500W y bateria para 3 horas</p>
-            <div class="justify-content-around d-flex">
-              <a href="#" class="btn btn-primary btnCarrito">Agregar al Carrito</a>
-            </div>
-            </div>
-        </div>
+            <div class="justify-content-evenly d-flex">
+            <a href="#" id="verCarrito" class="btn btn-dark ">Ver Carrito </a>
+            <a href="#" id="vaciarCarrito" class="btn btn-dark">Vaciar Carrito </a>
+          </div>
       </div>
 
 
@@ -172,7 +124,7 @@
     </div>
     
     <!-- Script para cargar las funciones -->
-    <script src="baseDatos.js"></script>
-    <script src="main.js"></script>
+    <script src="llenarCarrito.js"></script>
+    <script src="vaciarCarrito.js"></script>
   </body>
 </html>

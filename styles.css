@@ -69,10 +69,6 @@
     -webkit-background-clip: text;
   }
 
-  .carrito {
-    height: 500px;
-  }
-
   ul {
     justify-content: space-around;
     margin-top: 20px;
