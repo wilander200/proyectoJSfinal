@@ -28,6 +28,6 @@ class bicicletas {
   bikes.push(new bicicletas(18, "Ebike para Downhill", 11800000, 12));
   bikes.push(new bicicletas(19, "Ebike para Enduro", 7400000, 15));
   bikes.push(new bicicletas(20, "Ebike Rígida", 3500000, 18));
-  bikes.push(new bicicletas(20, "Ebike para Trail", 6680000, 15));
-  bikes.push(new bicicletas(20, "Fat Bike Eléctrica", 8450000, 11));
+  bikes.push(new bicicletas(21, "Ebike para Trail", 6680000, 15));
+  bikes.push(new bicicletas(22, "Fat Bike Eléctrica", 8450000, 11));
   
