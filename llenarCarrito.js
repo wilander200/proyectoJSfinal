@@ -5,12 +5,12 @@ btnVerCarrito.addEventListener("click", llenarCarrito);
 let contenedor = JSON.parse(localStorage.getItem("contenedor"));
 
 function llenarCarrito(e) {
-
+    e.preventDefault();
     for (let i of contenedor){
       let row = document.createElement("ul");
       row.innerHTML = `<li>${i.ref}</li> 
       <li>${i.nombre}</li>
-      <li>${i.precio}</li>`;
+      <li>${i.precio.toLocaleString("es-CL")}</li>`;
       let mensaje = document.getElementById("listaCarrito");
       mensaje.appendChild(row);
     }
