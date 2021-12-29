@@ -81,3 +81,19 @@
     justify-content: space-between;
     width: 25%;
   }
+
+  .botones {
+    display: none;
+    width: 200px;
+  }
+
+  .elementos {
+    display: none;
+  }
+
+  #parrafoClima {
+    display: flex;
+    justify-content: end;
+    color: white;
+    align-items: center;
+  }

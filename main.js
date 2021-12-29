@@ -31,11 +31,9 @@ function agregarStorage(e) {
         i.precio
       );
       contenedor.push(producto);
-      console.log(contenedor);
       guardarLocalStorage(contenedor);
     }
   }
-
 } 
 
 function guardarLocalStorage(contenedor) {

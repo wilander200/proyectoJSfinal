@@ -1,14 +1,14 @@
-let btnVaciarCarrito = document.getElementById("vaciarCarrito");
+$("#btnCerrar").click(function(){
+  $("#elementos").hide()
+  $("#btnCerrar").hide()
+  $("#btnVaciar").hide()
+})
 
-btnVaciarCarrito.addEventListener("click", vaciarCarrito);
-
-
-function vaciarCarrito(e) {
-    localStorage.clear();
-    let lista = document.getElementById("listaCarrito");
-    let suma = document.getElementById("sumatoria");
-    let iva = document.getElementById("totalIva");
-    lista.remove();
-    suma.remove();
-    iva.remove();
-  }
+$("#btnVaciar").click(function(){
+  $("#elementos").empty()
+  $("#btnCerrar").hide()
+  $("#btnVaciar").hide()
+  localStorage.clear();
+  contenedor = [];
+  contenedorDos = [];
+})

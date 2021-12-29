@@ -29,15 +29,16 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <title>BikeXtrem </title>
   </head>
   <body>
     <!--contenedor de toda la página-->
   <div class="container-fluid d-block">
-
-    
+   
     <!--Header  -->
     <div class="row d-flex flex-row justify-content-betwen mx-1 bg-black">
+
       <!-- Logo de la pagina -->
       <div class="col-2">
         <a href="index.html">
@@ -46,7 +47,9 @@
       </div>
       <!-- Barra de navegacion para moverse entre las paginas -->
       <div class="col-10 container">
-        <ul class="nav h-100  row d-flex justify-content-end align-items-end w-100">
+        <div id="cintaClima"  class="row">
+        </div>
+        <ul class="nav h-50  row d-flex justify-content-end align-items-end w-100">
           <li class="nav-item col-2 ">
             <a href="index.html">Home</a>
           </li>
@@ -57,15 +60,16 @@
             <a href="ebikes.html">Ebikes</a>
           </li>
           <li class="nav-item col-2">
-            <a id="cargarCarrito" href="carrito.html"><img class="imgCarrito" src="img/portada/carrito.png" alt="carritoCompra"/></a>
+            <img class="imgCarrito" id="carrito" src="img/portada/carrito.png" alt="carritoCompra"/>
           </li>
         </ul>
         
       </div>
+
     </div>
-      
+
       <!-- seccion principal de la pagina -->
-      <div class="main col-12 p-1">
+      <div class="main col-12 m-1">
         <div
         id="carouselExampleInterval"
         class="carousel slide"
@@ -127,6 +131,16 @@
       </button>
     </div>
   </div>
+      <!-- Carrito de compras  -->
+
+      <div class="row d-flex justify-content-center">
+        <div id="elementos" class="elementos col-12">
+        </div>
+        <div class="d-flex justify-content-around">
+          <button id="btnCerrar" class="botones btn btn-danger col-12">CERRAR CARRITO</button>
+          <button id="btnVaciar" class="botones text-center btn btn-danger col-12">VACIAR CARRITO</button>
+        </div>
+        </div>
   <div class="row justify-content-center mx-1">
     <div class="d-flex justify-content-center align-items-center">
       <div class="col-12 m-3">
@@ -155,11 +169,13 @@
         <h3 class="text-center fw-bold my-2">Ebikes</h3>
       </div>
       <div class="col-4 my-3">
-        <img
-        class="img-fluid d-block mx-auto imgProducto"
-        src="img/enduro/enduro27Doble.jfif"
-        alt="electrico"
-        />
+        <a href="bicicletas.html">
+          <img
+          class="img-fluid d-block mx-auto imgProducto"
+          src="img/enduro/enduro27Doble.jfif"
+          alt="electrico"
+          />
+        </a> 
         <h3 class="text-center fw-bold my-2">Enduro</h3>
       </div>
       <div class="col-4 my-3">
@@ -234,7 +250,11 @@
     </div>
     
     <!-- Script para cargar las funciones -->
+    <script src="AJAX.js"></script>
     <script src="baseDatos.js"></script>
+    <script src="animaciones.js"></script>
     <script src="main.js"></script>
+    <script src="llenarCarrito.js"></script>
+    <script src="vaciarCarrito.js"></script>
   </body>
 </html>
