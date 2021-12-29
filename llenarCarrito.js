@@ -1,3 +1,5 @@
+/* Programa para el llenado del carrito y el llenado en HTML */
+
 let contenedorDos = [];
 $("#carrito").click(function(){
   let contenedorDos = JSON.parse(localStorage.getItem("contenedor"));

@@ -1,4 +1,4 @@
-/* Animando las imagenes de los productos */
+/* Animando las imagenes de los productos y haciendolas un poco mas grandes*/
 
 $(".imgProducto").mouseenter(function(e){
     $(e.currentTarget).css("transform", "scale(1.2)" );

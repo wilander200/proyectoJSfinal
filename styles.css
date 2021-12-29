@@ -91,6 +91,8 @@
     display: none;
   }
 
+  /* estilo para la conta del clima */
+
   #parrafoClima {
     display: flex;
     justify-content: end;

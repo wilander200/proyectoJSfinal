@@ -1,3 +1,5 @@
+/* llenado de la base de datos para todo el programa, se puede agregar mas posteriormente y de aca generar nuevos HTML */
+
 class bicicletas {
     constructor(ref, nombre, precio, unidad, stock) {
       this.ref = ref;

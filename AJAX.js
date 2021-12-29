@@ -1,4 +1,4 @@
-/* haciendo la pagina del clima para la pagina web */
+/* haciendo la pagina del clima para la pagina web, se pueden colocar mas datos*/
 
 let ubicacion = navigator.geolocation.getCurrentPosition(coordenadas);
 
