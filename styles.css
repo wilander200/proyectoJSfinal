@@ -99,3 +99,9 @@
     color: white;
     align-items: center;
   }
+
+  #imgClima{
+    background-color: rgb(143, 141, 141);
+    border-radius: 50%;
+    margin: 0 1rem;
+  }

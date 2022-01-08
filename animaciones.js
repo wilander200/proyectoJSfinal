@@ -1,7 +1,7 @@
 /* Animando las imagenes de los productos y haciendolas un poco mas grandes*/
 
 $(".imgProducto").mouseenter(function(e){
-    $(e.currentTarget).css("transform", "scale(1.2)" );
+    $(e.currentTarget).css("transform", "scale(1.1)" );
     $(e.currentTarget).css("transition", "transform 1s" );
 })
 
