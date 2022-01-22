@@ -25,7 +25,7 @@ function agregarStorage(e) {
         i.nombre,
         i.precio
       );
-      if (contenedor == " ") {
+      if (contenedor === null) {
         contenedor=[];
       }else {
       contenedor.push(producto);
