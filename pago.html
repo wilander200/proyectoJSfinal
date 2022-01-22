@@ -70,68 +70,6 @@
     </div>
 
       <!-- seccion principal de la pagina -->
-      <div class="main col-12 m-1">
-        <div
-        id="carouselExampleInterval"
-        class="carousel slide"
-        data-bs-ride="carousel"
-        >
-        <div class="carousel-inner">
-          <div class="carousel-item active" data-bs-interval="3000">
-            <img
-            src="img/portada/carrouselportada.jpeg"
-            class="d-block imgCarousel"
-            alt="imgcarrusel1"
-            />
-          </div>
-          <div class="carousel-item" data-bs-interval="3000">
-            <img
-            src="img/portada/carrouselPortada2.jpg"
-            class="d-block imgCarousel"
-            alt="imgcarrusel2"
-            />
-          </div>
-          <div class="carousel-item" data-bs-interval="3000">
-            <img
-            src="img/portada/carrouselPortada3.jpg"
-            class="d-block imgCarousel"
-            alt="imgcarrusel3"
-            />
-          </div>
-          <div class="carousel-item" data-bs-interval="3000">
-            <img
-            src="img/portada/carrouselPortada4.jpg"
-            class="d-block imgCarousel"
-            alt="imgcarrusel4"
-            />
-          </div>
-        </div>
-          <button
-          class="carousel-control-prev w-50"
-          type="button"
-          data-bs-target="#carouselExampleInterval"
-          data-bs-slide="prev"
-          >
-          <span
-          class="carousel-control-prev-icon"
-          aria-hidden="true"
-          ></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button
-        class="carousel-control-next w-50"
-        type="button"
-        data-bs-target="#carouselExampleInterval"
-        data-bs-slide="next"
-        >
-        <span
-        class="carousel-control-next-icon"
-        aria-hidden="true"
-        ></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
-  </div>
       <!-- Carrito de compras  -->
 
           <!-- Modal carrito  -->
@@ -155,75 +93,104 @@
 </div>
 
         <!-- Contenido de la página -->
-  <div class="row justify-content-center mx-1">
-    <div class="d-flex justify-content-center align-items-center">
-      <div class="col-12 m-3">
-        <h1 class="text-center fw-bold display-5 my-2">NUESTROS PRODUCTOS DESTACADOS</h1>
-      </div>
-    </div>
-    <div class="d-flex flex-wrap m-5">
-      <div class="col-4 my-3">
-        <a href="bicicletas.html">
-          <img  
-          class="img-fluid d-block mx-auto imgProducto"
-          src="img/downhill/downHill29Doble.jfif"
-          alt="electrico"
-          />
-        </a>
-          <h3 class="text-center fw-bold my-2">Downhill</h3>
-      </div>
-      <div class="col-4 my-3">
-        <a href="ebikes.html">
-          <img
-          class="img-fluid d-block mx-auto imgProducto"
-          src="img/ebikes/ebikeEnduro.jfif"
-          alt="electrico"
-          />
-        </a>
-        <h3 class="text-center fw-bold my-2">Ebikes</h3>
-      </div>
-      <div class="col-4 my-3">
-        <a href="bicicletas.html">
-          <img
-          class="img-fluid d-block mx-auto imgProducto"
-          src="img/enduro/enduro27Doble.jfif"
-          alt="electrico"
-          />
-        </a> 
-        <h3 class="text-center fw-bold my-2">Enduro</h3>
-      </div>
-      <div class="col-4 my-3">
-        <a href="bicicletas.html">   
-          <img
-          class="img-fluid d-block mx-auto imgProducto"
-          src="img/fatbikes/fatbike29.jfif"
-          alt="electrico"
-          />
-        </a>
-        <h3 class="text-center fw-bold my-2">Fat bikes</h3>
-      </div>
-      <div class="col-4 my-3">
-        <a href="bicicletas.html">
-          <img
-          class="img-fluid d-block mx-auto imgProducto"
-          src="img/trail/trailBike29.jfif"
-          alt="electrico"
-          />
-        </a>
-        <h3 class="text-center fw-bold my-2">Trail</h3>
-      </div>
-      <div class="col-4 my-3">
-        <a href="bicicletas.html">
-          <img
-          class="img-fluid d-block mx-auto imgProducto"
-          src="img/xco/xco29Doble.jfif"
-          alt="electrico"
-          />
-        </a>
-          <h3 class="text-center fw-bold my-2">XCO</h3>
-        </div>
-    </div>
-    </div>
+ 
+        <form>
+            <h1 class="h1 d-flex justify-content-center my-4">
+              PROCEDER CON LA COMPRA
+            </h1>
+            <div class="d-flex flex-column w-50 justify-content-center mx-auto">
+              <div class="mb-3">
+                <label for="userName" class="form-label">Nombre y Apellido</label>
+                <input type="text" class="form-control" id="userName" />
+              </div>
+              <div class="mb-3">
+                <label for="emailUsuario" class="form-label">Email </label>
+                <input type="email" class="form-control" id="emailUsuario" />
+              </div>
+              <div class="mb-3">
+                <label for="phoneUsuario" class="form-label">Teléfono </label>
+                <input type="text" class="form-control" id="phoneUsuario" />
+              </div>
+              <div class="mb-3">
+                <label for="direccionUsuario" class="form-label">Dirección de despacho</label>
+                <input type="email" class="form-control" id="direccionUsuario" />
+              </div>
+              <label for="selecMedioPago" class="form-label my-1"
+              >Medio de pago</label
+              >
+              <select class="form-select my-1" id="medioPago">
+                <option selected>Medio de Pago</option>
+                <option value="credito">Tarjeta de Credito</option>
+                <option value="debito">Tarjeta de Debito</option>
+                <option value="transferencia">Transferencia Bancaria</option>
+                <option value="mercadoPago">Mercadopago</option>
+              </select>
+              
+              <label for="selecCuotas" class="form-label my-1"
+              >Cantidad de Cuotas</label
+              >
+              <select class="form-select my-1" id="cuota">
+                <option selected>Cantidad de cuotas</option>
+                <option value="1">1</option>
+                <option value="3">3</option>
+                <option value="6">6</option>
+                <option value="9">9</option>
+                <option value="12">12</option>
+                <option value="15">15</option>
+                <option value="18">18</option>
+                <option value="24">24</option>
+              </select>
+              
+              <button
+              type="button"
+              class="btn btn-primary w-25 mx-auto my-4"
+              id="button"
+              data-bs-toggle="modal"
+              data-bs-target="#btnContinuar"
+              >
+              PAGAR
+            </button>
+          </form>
+            
+            <!-- Modal -->
+            <div
+            class="modal fade"
+            id="btnContinuar"
+            tabindex="-1"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog modal-dialog-scrollable">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="tituloRespuesta">Pago</h5>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body" id="respuesta">
+                        Por el momento nos encontramos sin red, lo que nos imposibilita el cobro, dirijase a la tienda más cercana donde nuestros trabajadores podran ayudarlo. muchas gracias por su comprención.
+                    </div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-secondary"
+                        data-bs-dismiss="modal"
+                      >
+                        Cerrar
+                      </button>
+                      <button type="button" class="btn btn-primary">
+                        Pagar 
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
     
     <!-- footer -->
     <div class="row p-4 mx-1 footer bg-black d-flex footer">
