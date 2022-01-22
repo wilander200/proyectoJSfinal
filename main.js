@@ -1,5 +1,5 @@
-//let contenedor = [];
-let contenedor = JSON.parse(localStorage.getItem("contenedor"));
+let contenedor = [];
+contenedor = JSON.parse(localStorage.getItem("contenedor"));
 let botonCompra = document.querySelectorAll(".btnCarrito");
 
 for (let btn of botonCompra){
@@ -25,9 +25,13 @@ function agregarStorage(e) {
         i.nombre,
         i.precio
       );
+      if (contenedor == " ") {
+        contenedor=[];
+      }else {
       contenedor.push(producto);
       guardarLocalStorage(contenedor);
     }
+  }
   }
 } 
 
