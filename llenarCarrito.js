@@ -1,6 +1,5 @@
 /* Programa para el llenado del carrito y el llenado en HTML */
 
-let contenedorDos = [];
 $("#carrito").click(function(){
   let contenedorDos = JSON.parse(localStorage.getItem("contenedor"));
     $("#elementos").empty()
@@ -17,10 +16,9 @@ $("#carrito").click(function(){
     let totalPrecio = 0;
     for ( let i of contenedorDos) {
       totalPrecio = i.precio + totalPrecio;}
-      console.log(totalPrecio);
-      $("#elementos").show().append(`<h4 class= "text-end display-6"><b>Total neto a pagar:  ${totalPrecio.toLocaleString("es-CL")}</b></h4>`)
+      $("#elementos").show().append(`<h6 class= "text-end h6"><b>Total neto a pagar:  ${totalPrecio.toLocaleString("es-CL")}</b></h6>`)
       let totalIva = totalPrecio*1.19;
-      $("#elementos").show().append(`<h4 class = "text-end display-6"><b>Total con IVA:  ${totalIva.toLocaleString("es-CL")}</b></h4>`)  
+      $("#elementos").show().append(`<h6 class = "text-end h6"><b>Total con IVA:  ${totalIva.toLocaleString("es-CL")}</b></h6>`)  
   }
 )
   

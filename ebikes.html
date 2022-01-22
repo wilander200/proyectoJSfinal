@@ -61,7 +61,7 @@
             <a href="ebikes.html">Ebikes</a>
           </li>
           <li class="nav-item col-2">
-            <img class="imgCarrito" id="carrito" src="img/portada/carrito.png" alt="carritoCompra"/>
+            <button type="button" class="btn btn-black" data-bs-toggle="modal" data-bs-target="#modalCarrito"> <img class="imgCarrito" id="carrito" src="img/portada/carrito.png" alt="carritoCompra"/></button>
           </li>
         </ul>
         
@@ -72,11 +72,12 @@
 
     <!-- hero de la pagina -->
     <div class=" row hero1">
-      <h1 class="texto1 w-100">LAS MEJORES BICICLETAS</h1>
+      <!-- <h1 class="texto1 w-100">LAS MEJORES BICICLETAS</h1> -->
     </div>
 
     <!-- Carrito de compras  -->
-    <div class="w-50 m-auto">
+    
+    <!-- <div class="w-50 m-auto">
 
       <div class="row d-flex justify-content-center">
         <div id="elementos" class="elementos col-12">
@@ -86,7 +87,28 @@
           <button id="btnVaciar" class="botones text-center btn btn-danger col-12">VACIAR CARRITO</button>
         </div>
       </div>
+    </div> -->
+
+              <!-- Modal carrito  -->
+<div class="modal fade" id="modalCarrito" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Carrito de Compras</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div id="elementos" class="elementos col-12">
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" id="btnVaciar" class="btn btn-danger" data-bs-dismiss="modal">Vaciar Carrito</button>
+        <button type="button" class="btn btn-primary">Proceder a Pagar</button>
+      </div>
     </div>
+  </div>
+</div>
+
 
       <!-- Seccion principal de la pagina -->
       <div class="row my-4 justify-content-center">

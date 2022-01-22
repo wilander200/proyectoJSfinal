@@ -1,4 +1,5 @@
-let contenedor = [];
+//let contenedor = [];
+let contenedor = JSON.parse(localStorage.getItem("contenedor"));
 let botonCompra = document.querySelectorAll(".btnCarrito");
 
 for (let btn of botonCompra){
@@ -32,6 +33,5 @@ function agregarStorage(e) {
 
 function guardarLocalStorage(contenedor) {
   let guardado = JSON.stringify(contenedor);
-  console.log(guardado);
   localStorage.setItem("contenedor", guardado) 
 }
